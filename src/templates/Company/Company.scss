@@ -1,0 +1,360 @@
+@media (max-device-width: 991px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-device-width: 992px) {
+  .main-company-page {
+    width: 92vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .fadeIn {
+      opacity: 1;
+    }
+
+    .fadeOut {
+      opacity: 0;
+    }
+
+    
+    .scaleUp {
+      transform: scaleY(1);
+    }
+
+    .scaleDown {
+      transform: scaleY(0);
+      
+    }
+
+
+    .main-company {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      
+
+
+      .voltar {
+        top: 0;
+        width: 100%;
+        border-radius: 2vh 2vh 0 0;
+        height: 4vh;
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 0.4vw;
+      }
+
+      .bola {
+        height: 1vh;
+        width: 1vh;
+        border-radius: 4vh;
+        background-color: #00879640;
+      }
+
+      .tableHeader {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        width: 100%;
+        transition: 0.5s;
+        margin-top: 5vh;
+      }
+
+      .company-title {
+        display: flex;
+        flex-direction: row;
+        gap: 1.4vw;
+        margin-right: auto;
+      }
+
+      .company-title h1 {
+        color: #262626;
+        font: 700 var(--font-size-xl) "Roboto";
+        position: relative;
+        top: 1.1vh;
+      }
+
+      .company-title #iconDomain {
+        font-size: 5vh;
+        color: #464646;
+      }
+
+      .text-hover {
+        text-align: center;
+        padding: 0.4vh;
+        line-height: 2vh;
+        background: #fff;
+        color: #000;
+        display: block;
+        width: 7.8vw;
+        opacity: 0;
+        border-radius: 1vh 1vh 0vh 1vh;
+        font-size: var(--font-size-m);
+        white-space: nowrap;
+        position: absolute;
+        right: 2vw;
+        bottom: 5vh;
+        visibility: hidden;
+      }
+
+      .domain-hover:hover .text-hover {
+        visibility: inherit;
+        opacity: 1;
+        -webkit-transition: all 300ms ease;
+        -moz-transition: all 300ms ease;
+        -ms-transition: all 300ms ease;
+        -o-transition: all 300ms ease;
+        transition: all 300ms ease;
+      }
+
+      .input-search {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: auto;
+      }
+
+      .input-search input[type="search"] {
+        width: 24.2vw;
+        height: 4.4vh;
+        border-radius: 5vh !important;
+        border: 0.1vh solid #cacaca;
+        outline: none;
+        padding: 2vh;
+        padding-left: 2.4vw;
+        font-size: var(--font-size-m);
+        box-shadow: inset 0vh 0.4vh 0.4vh rgba(0, 0, 0, 0.25);
+        color: var(--gray)
+      }
+
+      .input-search #searchIcon {
+        color: #89d7e2;
+        position: relative;
+        left: 2.1vw;
+        font-size: 3vh
+      }
+
+      .table-background {
+        width: 97vw;
+        background-color: #fff;
+        border-radius: 2.6vh 2.6vh 0 0;
+        position: absolute;
+        bottom: 0;
+        //top: 31vh;
+        //left: 1.5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: 0.5s;
+        transform-origin: bottom;
+        z-index: 3;
+        align-self: center;
+      }
+
+      .table {
+        max-width: 94%;
+        margin-top: 4vh;
+        margin-bottom: 11vh;
+        font-size: var(--font-size-m);
+        --bs-table-bg: none;
+      }
+
+      thead {
+        background-color: #f1f1f1;
+      }
+
+      thead,
+      thead tr {
+        border-color: transparent;
+        border-style: none;
+        border-width: 0;
+      }
+
+      thead tr th {
+        padding: 0.8vh 0.8vh;
+      }
+
+      tr {
+        vertical-align: middle;
+      }
+
+      .tableIconAlign {
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 0vh 4vh 4vh 0vh;
+      }
+
+      .tableIcon {
+        font-size: 3.8vh;
+        cursor: pointer;
+      }
+
+      .borderRadius {
+        border-radius: 4vh 0vh 0vh 4vh;
+        padding-left: 1vw !important;
+      }
+
+      .itemAlign {
+        padding-left: 1vw !important;
+      }
+
+      .Active,
+      .Inactive,
+      .Pending {
+        font-size: 1vh;
+      }
+
+      .Active {
+        color: #a2ca01;
+      }
+
+      .inactiveText {
+        color: #de0d0d;
+      }
+
+      .Inactive {
+        color: #de0d0d;
+      }
+
+      .Pending {
+        color: #ffe600;
+        position: relative;
+        top: 1.8vh;
+      }
+
+      .inputAlign {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        width: 95%;
+      }
+
+      .selectInput {
+        display: flex;
+        flex-direction: row;
+        align-self: flex-start;
+        position: relative;
+        bottom: 3.8vh;
+        gap: 1vh;
+      }
+
+      .selectInput label {
+        color: #a1a1a1;
+        font-size: var(--font-size-l);
+      }
+
+      .selection {
+        border-radius: 2vh;
+        border: 0.1vh solid #d1d1d1;
+        background: #fff;
+        box-shadow: 0vh 0.4vh 0.4vh 0vh rgba(0, 0, 0, 0.25) inset;
+        width: 3.8vw;
+        height: 5vh;
+        padding-left: 0.7vw;
+        position: relative;
+        bottom: 1vh;
+        appearance: none;
+        font-size: var(--font-size-l);
+        outline: none;
+      }
+
+      .arrowIcon {
+        position: absolute;
+        left: 4.7vw;
+        font-size: 4vh;
+        bottom: 1.5vh;
+        color: #8e9794;
+      }
+
+      .btnLayout {
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+        position: relative;
+        bottom: 5vh;
+      }
+
+      .btnIcon {
+        color: #e0e0e0;
+        font-size: 5vh;
+      }
+
+      .btnArrowLeft {
+        color: #e0e0e0;
+        font-size: 5vh;
+        position: relative;
+        right: 0.7vw;
+      }
+
+      .btnArrowRight {
+        color: #e0e0e0;
+        font-size: 5vh;
+        position: relative;
+        left: 0.7vw;
+      }
+
+      .view {
+        opacity: 1;
+        transform: scaleY(1);
+      }
+
+      .hide {
+        opacity: 0;
+        transform: scaleY(0);
+      }
+
+      .btnLayout p {
+        color: #a1a1a1;
+        text-align: center;
+        font-size: var(--font-size-l);
+        position: relative;
+        top: 1.3vh;
+      }
+
+      .Waiting {
+        display: flex;
+        flex-direction: row;
+        gap: 0.4vh;
+      }
+    }
+
+    .backCompany{
+      background-color: #fff;
+      width: 97vw;
+      height: 3vh;
+      position: absolute;
+      bottom: 0;
+      border-radius: 1.5vh 1.5vh 0 0 ;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 0.5vw;
+      z-index: 2;
+
+
+      .circleBack {
+        height: 1vh;
+        width: 1vh;
+        background-color: #89D7E2;
+        border-radius: 4vh;
+        display: flex;
+        cursor: pointer;
+        align-self: center;
+      }
+
+      p {
+        font-size: var(--font-size-m);
+        display: flex;
+        align-self: center;
+        cursor: pointer;
+      }
+    }
+  }
+}

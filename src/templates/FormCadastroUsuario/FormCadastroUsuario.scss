@@ -1,0 +1,217 @@
+/* Large devices (desktops, 992px and up) */
+@media (min-device-width: 992px) {
+	.main-cadastro-usuario {
+		width: 45vw;
+		margin-top: 5vh;
+		color: var(--gray);
+
+		h2 {
+			margin-bottom: 3vh;
+			font-style: normal;
+			font-weight: 700;
+			font-size: var(--font-size-xl);
+		}
+
+		.inputs {
+			display: flex;
+			flex-direction: row;
+			align-items: flex-end;
+			gap: 3vw;
+			width: 100%;
+	
+			.title {
+				font-size: var(--font-size-m);
+				margin-left: 1vw;
+			}
+	
+			.empresa, .responsavel {
+				display: flex;
+				flex-direction: column;
+				gap: 3vh;
+				width: 50%;
+			}
+		}
+
+		.buttons {
+			margin-top: 5.5vh;
+			display: flex;
+			flex-direction: row-reverse;
+			justify-content: space-between;
+			text-align: center;
+	
+			a {
+				text-decoration: none;
+				color: var(--darkblue);
+			}
+		
+		}
+	}
+
+	.main-welcome-message {
+		margin-right: 8vw !important;
+	}
+
+	.main-cadastro-senha {
+        width: 45vw;
+        margin-top: 7.2vh;
+        color: var(--darkgray);
+
+        h2 {
+            margin-bottom: 6.2vh;
+            font-style: normal;
+            font-weight: 700;
+            font-size: var(--font-size-xl);
+        }
+
+        .password {
+            margin-top: 2.5vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+			width: 28vw;
+
+            .icon-align {
+                position: absolute;
+                margin: 3vh 1vw 0 0;
+                display: flex;
+
+                .show-icon {
+                    font-size: 3.2vh;
+                    color: var(--darkblue);
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .icon{
+            font-size: 3.8vh;
+        }
+
+        .buttons {
+            /* margin-top: 7vh; */
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            text-align: center;
+    
+            a {
+                text-decoration: none;
+                color: var(--darkblue);
+            }
+        }
+    }
+}
+
+/* Small devices (landscape phones, 991px and below) */
+@media (max-device-width: 991px) {
+	.main-cadastro-usuario {
+		width: 90%;
+		margin-top: 5.2vh;
+		color: var(--gray);
+
+		h2 {
+			font-style: normal;
+			font-weight: 700;
+			font-size: var(--font-size-xl);
+		}
+
+		.inputs {
+			display: flex;
+			flex-direction: column;
+
+			.title {
+				font-size: var(--font-size-m);
+				margin-top: 2.5vh;
+			}
+
+			.empresa, .responsavel {
+				display: flex;
+				align-self: baseline;
+				flex-direction: column;
+				gap: 2.4vh;
+				width: 100%;
+			}
+
+			.responsavel {
+				.title {
+					margin: 0;
+				}
+			}
+
+			label {
+				margin-left: 3vw;
+			}
+		}
+
+		.buttons {
+			margin-top: 7vh;
+			display: flex;
+			flex-direction: row-reverse;
+			justify-content: space-between;
+			text-align: center;
+	
+			a {
+				text-decoration: none;
+			}
+		}
+
+		.main-welcome-message {
+			margin-right: 8vw !important;
+		}
+	}
+
+	.main-cadastro-senha {
+        width: 100%;
+        margin-top: 7.2vh;
+        color: var(--darkgray);
+
+        h2 {
+            margin-bottom: 6.2vh;
+            font-style: normal;
+            font-weight: 700;
+            font-size: var(--font-size-xl);
+        }
+
+		label {
+            margin-left: 3vw;
+        }
+
+        .password {
+            margin-top: 2.5vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+
+            .icon-align {
+                position: absolute;
+                margin: 3vh 3vw 0 0;
+                display: flex;
+
+                .show-icon {
+                    font-size: 3.2vh;
+                    color: var(--darkblue);
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .icon{
+            font-size: 3.8vh;
+        }
+
+        .buttons {
+            /* margin-top: 7vh; */
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            text-align: center;
+    
+            a {
+                text-decoration: none;
+                color: var(--darkblue);
+            }
+        }
+    }
+}

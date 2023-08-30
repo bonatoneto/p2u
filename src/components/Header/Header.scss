@@ -1,0 +1,234 @@
+body p,
+body h1 {
+  margin: 0;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-device-width: 991px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-device-width: 992px) {
+  .main-header {
+    display: flex;
+    background-color: var(--white);
+    border-radius: 0 0 2vh 2vh;
+    box-shadow: 0 0.4vh 0.4vh #00000026;
+    height: 8.8vh;
+    width: 100%;
+    z-index: 99;
+
+    .empresa {
+      /*background-color: var(--lightblue); */
+      border-radius: 1vh;
+      height: 5.1vh;
+      left: 1.6vw;
+      position: absolute;
+      top: 1.7vh;
+      width: 13.8vw;
+    }
+    #logo {
+      width: 15vh;
+      position: absolute;
+    }
+  
+    .perfil {
+      display: flex;
+      flex-direction: row;
+      margin-left: auto;
+      margin-right: 1.6vw;
+      align-items: center;
+    }
+  
+    .foto {
+      height: 5.2vh;
+      object-fit: cover;
+      position: relative;
+      margin-left: 0.3vh;
+    }
+  
+    .group-users {
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      gap: 0.7vw;
+      margin-right: 1.6vw;
+    }
+  
+    .group-users .flex-row {
+      gap: 0.7vw;
+      display: flex;
+      align-items: center;
+      align-self: center;
+    }
+  
+    .administrador {
+      color: var(--lightgrey);
+      font-size: var(--font-size-xs);
+      font-weight: 400;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .name {
+      color: var(--gray);
+      font-size: var(--font-size-l);
+      font-weight: 700;
+    }
+  
+    .arrow {
+      font-size: 5vh;
+      color: #b6b9c2;
+      cursor: pointer;
+      transform: rotate(0deg);
+      transition: 0.3s;
+    }
+  
+    .rotate {
+      transform: rotate(180deg);
+    }
+  
+    .sair {
+      border: 0.1vh solid var(--red);
+      border-radius: 2.5vh;
+      height: 5.1vh;
+      width: 5.1vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+  
+    .off {
+      color: var(--red);
+      font-size: var(--font-size-xxl);
+    }
+  
+    .dropDown-menu {
+      position: absolute;
+      margin-top: 7vh;
+      width: 29vh;
+      background: #fff;
+      box-shadow: 0 0.4vh 0.4vh 0 rgba(0, 0, 0, 0.25);
+      border-radius: 0 0 2vh 2vh;
+      user-select: none;
+      transition: 0.4s;
+      transform-origin: top;
+      padding: 2vh;
+    }
+  
+    .view {
+      opacity: 1;
+      transform: scaleY(1);
+    }
+  
+    .hide { 
+      opacity: 0;
+      transform: scaleY(0);
+    }
+  
+    .linha {
+      width: 99%;
+      border: dashed 0.1vh #B5AEAE;
+      align-self: center;
+      position: relative;
+      margin-top: 2vh;
+    }
+  
+    .empresas {
+      display: flex;
+      flex-direction: row;
+      margin-top: 2.4vh;
+      align-items: center;
+      gap: 2vh;
+    }
+  
+    .enterprise {
+      width: 3.2vh;
+      height: 3.2vh;
+      position: relative;
+      color: #fff;
+    }
+  
+    .icon-bg,
+    .icon-bg2 {
+      width: 5.1vh;
+      height: 5.1vh;
+      border-radius: 5vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .icon-bg {
+      background-color: #169B3B;
+    }
+  
+    .icon-bg2 {
+      background-color: #472988;
+    }
+  
+    .dropDown-menu ul {
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .dropDown-menu ul li a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #262626;
+      font-size: var(--font-size-xs);
+      font-weight: 400;
+      text-decoration-line: none;
+      position: relative;
+    }
+  
+    .dropDown-menu ul li h1 {
+      font-size: var(--font-size-m);
+      font-weight: 500;
+      position: relative;
+    }
+  
+    .dropDown-menu p {
+      text-decoration-line: underline;
+    }
+  
+    .dropDown-menu .editprofile {
+      list-style: disc;
+      color: #2BC3D4;
+      font-size: 2.5vh;
+      position: relative;
+      margin-left: 1.4vw;
+    }
+  
+    .editprofile #edittext {
+      font-size: var(--font-size-m);
+      font-weight: 400;
+      color: #262626;
+    }
+  
+    .dropdown-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 0;
+      gap: 0.5vh;
+    }
+  
+    .border-image {
+      position: absolute;
+      width: 5.8vh;
+      height: 5.5vh;
+      border-radius: 3.2vh;
+      border: 0.2vh solid #2BC3D4;
+      padding: 2vh;
+    }
+  }
+
+  
+}

@@ -1,0 +1,64 @@
+@media (max-device-width: 991px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-device-width: 992px) {
+
+
+
+.main-dashboard {
+    width: 95%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    gap: 3.3vw;
+
+    .col {
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+        flex: 0;
+        width: 4.9vw;
+    }
+    
+    .disabled {
+        visibility: hidden;
+        
+    }
+    
+    
+    .ferramenta {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 9.3vh;
+        width: 4.9vw;
+        cursor: pointer;
+    }
+    
+    
+    
+    .label {
+        font-size: var(--font-size-s);
+        text-align: center;
+    }
+    
+    .icon{
+        font-size: 6.4vh;
+    
+    }
+    .col a {
+        text-decoration: none;
+    
+    
+    }
+
+    .screen a {
+        display: contents;
+        text-decoration: none;
+    }
+}
+
+
+}

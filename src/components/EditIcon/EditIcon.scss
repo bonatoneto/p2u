@@ -1,0 +1,49 @@
+.editIcon {
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 0vh 4vh 4vh 0vh;
+    
+  .noteIcon {
+    font-size: 3.8vh;
+    cursor: pointer;
+  }
+
+   .iconHide {
+    opacity: 0;
+    visibility: hidden;
+   }
+
+   .icondShow {
+    opacity: 1;
+    visibility: visible;
+   }
+
+
+.editText-hover {
+   text-align: center;
+   padding:0.4vh;
+   line-height:2vh;
+   background: #E1E1E1;
+   color: #000;
+   display: block;
+   width: 4.4vw;
+   border-radius: 1vh 1vh 1vh 0;
+   font-size: var(--font-size-m);
+   white-space: nowrap;
+   position: absolute;
+    margin-top: -2.5vh;
+    margin-left: 1vw;
+ }
+
+
+ .edit-hover:hover .editText-hover {
+   //visibility: visible;
+   //opacity: 1;
+   -webkit-transition: all 300ms ease-in-out;
+   -moz-transition: all 300ms ease-in-out;
+   -ms-transition: all 300ms ease-in-out;
+   -o-transition: all 300ms ease-in-out;
+   transition: all 300ms ease-in-out;
+ }
+
+}

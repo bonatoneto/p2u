@@ -1,0 +1,55 @@
+/* Small devices (landscape phones, 576px and up) */
+@media (max-device-width: 991px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-device-width: 992px) {
+    .tela-dash {
+        background-color: #efefef;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+
+        .content {
+            width: 100%;
+            height: 91.2vh;
+            z-index: 98;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .logo {
+            height: 4.7vh;
+            object-fit: cover;
+            position: absolute;
+            bottom: 3vh;
+            right: 3vw;
+            z-index: 99;
+        }
+        
+        .background {
+            height: 100vh;
+            object-fit: cover;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    
+        Input {
+            border-radius: 1vh !important;
+        
+        }
+    
+        #personal-date {
+            margin-bottom: 0;
+        }
+
+        
+
+    }
+
+    
+}

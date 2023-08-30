@@ -1,0 +1,106 @@
+.btn:hover,
+.btn:active {
+  background-color: var(--darkblue);
+  border: 0.1vh solid var(--darkblue);
+  color: var(--white);
+}
+
+.btn-white:hover,
+.btn-white:active {
+  background-color: var(--light);
+  border: 0.1vh solid var(--lightblue);
+  color: var(--darkblue);
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-device-width: 992px) {
+  .button {
+    display: flex;
+    line-height: normal;
+    justify-content: flex-end;
+  }
+
+  .btn {
+    background-color: var(--lightblue);
+    border: 0.1vh solid var(--lightblue);
+    border-radius: 20vh;
+    width: 11vw;
+    height: 4.4vh;
+    text-align: center;
+    padding: 0;
+    white-space: nowrap;
+
+    color: var(--white);
+    font-family: var(--roboto);
+    font-size: var(--font-size-l);
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
+  }
+
+  .btn-white {
+    background-color: var(--white);
+    border: 0.1vh solid var(--lightblue);
+    color: var(--darkblue);
+  }
+
+  .btn-s-white {
+    background-color: var(--white);
+    border: 0.1vh solid var(--lightblue);
+    color: var(--darkblue);
+    font-size: var(--font-size-m);
+    width: 7vw;
+    height: 3.4vh;
+    text-transform: none;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-device-width: 991px) {
+
+  .button {
+    display: flex;
+    line-height: normal;
+    justify-content: flex-end;
+  }
+
+  .btn {
+    background-color: var(--lightblue);
+    border: 0.1vh solid var(--lightblue);
+    border-radius: 20vh;
+    width: 33vw;
+    height: 4.4vh;
+    text-align: center;
+    padding: 0;
+
+    color: var(--white);
+    font-family: var(--roboto);
+    font-size: var(--font-size-l);
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: var(--font-size-l);
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .btn-white {
+    background-color: var(--white);
+    border: 0.1vh solid var(--lightblue);
+    color: var(--darkblue);
+  }
+
+  .btn-s-white {
+    background-color: var(--white);
+    border: 0.1vh solid var(--lightblue);
+    color: var(--darkblue);
+    font-size: var(--font-size-m);
+    width: 7vw;
+    height: 3.4vh;
+    text-transform: none;
+  }
+
+}
